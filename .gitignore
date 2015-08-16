@@ -1,0 +1,12 @@
+# IDEA
+*.iml
+.idea
+
+# NodeJS
+node_modules
+npm-debug.log
+
+# Build & release
+build
+release
+tmp

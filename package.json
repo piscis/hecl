@@ -1,0 +1,27 @@
+{
+  "name": "hecl",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Hirachical Environment Config Loader",
+  "main": "build/loader.js",
+  "scripts": {
+    "test": "mocha --compilers ts:espower-typescript/guess -b --recursive"
+  },
+  "author": "Alexander Pirsig <self@pirsig.net>",
+  "license": "MIT",
+  "devDependencies": {
+    "chai": "^3.2.0",
+    "espower-typescript": "^1.0.0",
+    "gulp-typescript": "^2.8.0",
+    "mocha": "^2.2.5",
+    "tsd": "^0.6.3",
+    "typescript": "^1.5.3"
+  },
+  "dependencies": {
+    "extend": "^3.0.0",
+    "ini": "^1.3.4",
+    "js-yaml": "^3.3.1",
+    "lodash": "^3.10.1",
+    "node-yaml-config": "0.0.3"
+  }
+}
