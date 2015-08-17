@@ -1,0 +1,1 @@
+var fs=require("fs"),BaseFileLoader=function(){function t(){this.data=null}return t.prototype.load=function(t,e){return void 0===e&&(e=null),this.data=fs.readFileSync(t,"utf8"),this.path=t,this.env=e,this},t.prototype.reload=function(){return this.load(this.path,this.env)},t.prototype.getData=function(){return this.data},t}();exports["default"]=BaseFileLoader;

@@ -1,0 +1,1 @@
+var ArrayObjectConverter=function(){function r(){}return r.eachKeyValue=function(r,e){for(var n in r)r.hasOwnProperty(n)&&e(n,r[n])},r.convert=function(e){var n={};return r.eachKeyValue(e,function(e,t){var o=e.split("."),c=o.pop(),a=n;o.forEach(function(r){a=a[r]=a[r]||{}}),a[c]="object"==typeof t?r.convert(t):t}),n},r}();exports["default"]=ArrayObjectConverter;
