@@ -8,3 +8,5 @@ travis.yml
 tsconfig.json
 tsd.json
 .gitignore
+*.iml
+.idea
