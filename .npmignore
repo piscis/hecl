@@ -4,9 +4,9 @@ src
 build
 node_modules
 gulpfile.js
-travis.yml
 tsconfig.json
 tsd.json
+.travis.yml
 .gitignore
 *.iml
 .idea
