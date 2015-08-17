@@ -8,10 +8,10 @@ Hierarchical Environment Config Loader - for [node](http://nodejs.org).
 
 Load your configuration files in a hierachical order. Supported formats:
 
-  * ** Yaml **
-  * ** JSON **
-  * ** INI **
-  * Environment variable via ** JSON string **
+  * **Yaml**
+  * **JSON**
+  * **INI**
+  * Environment variable via **JSON string**
 
 ## Installation
 
@@ -21,7 +21,7 @@ npm install hecl
 
 ## Configuration files
 
-** config.yml **
+**config.yml**
 ```yaml
 # config.yml
 default:
@@ -32,7 +32,7 @@ production:
     port: 8000
 ```
   
-** config.json **
+**config.json**
 ```json
 {
   "default": {
@@ -48,7 +48,7 @@ production:
 }
 ```
   
-** config.ini **
+**config.ini**
 ```ini
 [default]
 server.port = 3000
@@ -59,7 +59,7 @@ server.port = 8000
   
 ## Usage
 
-** Load a single config file **
+**Load a single config file**
 ```js
 var Hecl = require('hecl');
 var cfg = new Hecl();
@@ -69,7 +69,7 @@ var config = cfg.load(__dirname + '/config/config.yml');
 console.log(config.getData()); 
 ```
 
-** Load multiple config files at once **
+**Load multiple config files at once**
 ```js
 var Hecl = require('hecl');
 var cfg1 = new Hecl();
@@ -139,9 +139,7 @@ The above copyright notice and this permission notice shall be included in all c
 
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
-## TODOs
-  * Add README
-  * ADD Examples
+
 
 [travis-image]: https://img.shields.io/travis/piscis/hecl/master.svg?label=linux
 [travis-url]: https://travis-ci.org/piscis/hecl
