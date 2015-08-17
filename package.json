@@ -1,8 +1,8 @@
 {
   "name": "hecl",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "H.E.C.L. - Hierarchical Environment Config Loader",
-  "main": "dist/ConfigRegister.js",
+  "main": "dist/main.js",
   "scripts": {
     "test": "mocha --compilers ts:espower-typescript/guess -b --recursive",
     "build": "gulp dist"

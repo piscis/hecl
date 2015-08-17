@@ -1,0 +1,1 @@
+var ConfigRegistry=require("./ConfigRegistry"),config=new ConfigRegistry;module.exports=config;
