@@ -1,14 +1,14 @@
 /// <reference path="../../typings/tsd.d.ts" />
 
-import IConfigLoader from './../interfaces/IConfigLoader';
-import BaseLoader    from './BaseLoader';
+import IConfigLoader        from './../interfaces/IConfigLoader';
+import BaseFileLoader       from './BaseFileLoader';
 import ArrayObjectConverter from './../utils/ArrayObjectConverter';
-import * as Ini      from 'ini';
-import * as extend   from 'extend';
-import * as lodash   from 'lodash';
-import * as traverse from 'traverse';
+import * as Ini             from 'ini';
+import * as extend          from 'extend';
+import * as lodash          from 'lodash';
+import * as traverse        from 'traverse';
 
-class IniLoader implements IConfigLoader {
+class IniFileLoader implements IConfigLoader {
 
   private data:Object = {};
   private path:string;
@@ -19,7 +19,7 @@ class IniLoader implements IConfigLoader {
 
     this.env = env || process.env.NODE_ENV || 'development'
 
-    var bl = new BaseLoader();
+    var bl = new BaseFileLoader();
     var data = bl.load(path).getData();
 
     try {
@@ -74,4 +74,4 @@ class IniLoader implements IConfigLoader {
   }
 }
 
-export default IniLoader;
+export default IniFileLoader;

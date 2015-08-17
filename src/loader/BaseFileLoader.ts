@@ -3,7 +3,7 @@
 import IConfigLoader from './../interfaces/IConfigLoader';
 import * as fs from 'fs';
 
-class BaseLoader implements IConfigLoader {
+class BaseFileLoader implements IConfigLoader {
 
   private data:Object = null;
   private path:string;
@@ -28,4 +28,4 @@ class BaseLoader implements IConfigLoader {
   }
 }
 
-export default BaseLoader;
+export default BaseFileLoader;

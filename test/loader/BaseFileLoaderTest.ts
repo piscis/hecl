@@ -4,14 +4,14 @@ import {assert} from 'chai';
 import * as path from 'path';
 import * as lodash from 'lodash';
 import IConfigLoader from './../../src/interfaces/IConfigLoader';
-import BaseLoader from './../../src/loader/BaseLoader';
+import BaseFileLoader from './../../src/loader/BaseFileLoader';
 
-describe('BaseLoader', function(){
+describe('BaseFileLoader', function(){
 
-  var loader:BaseLoader;
+  var loader:BaseFileLoader;
 
   beforeEach(function(){
-    loader = new BaseLoader();
+    loader = new BaseFileLoader();
   });
 
   afterEach(function(){

@@ -4,14 +4,14 @@ import {assert} from 'chai';
 import * as path from 'path';
 import * as lodash from 'lodash';
 import IConfigLoader from './../../src/interfaces/IConfigLoader';
-import IniLoader from './../../src/loader/IniLoader';
+import IniFileLoader from './../../src/loader/IniFileLoader';
 
-describe('IniLoader', function(){
+describe('IniFileLoader', function(){
 
-  var loader:IniLoader;
+  var loader:IniFileLoader;
 
   beforeEach(function(){
-    loader = new IniLoader();
+    loader = new IniFileLoader();
   });
 
   afterEach(function(){

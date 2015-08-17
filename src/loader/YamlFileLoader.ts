@@ -1,13 +1,13 @@
 /// <reference path="../../typings/tsd.d.ts" />
 
-import IConfigLoader from './../interfaces/IConfigLoader';
-import BaseLoader from './BaseLoader';
-import * as Yaml from 'js-yaml';
-import * as extend from 'extend';
-import * as lodash from 'lodash';
+import IConfigLoader  from './../interfaces/IConfigLoader';
+import BaseFileLoader from './BaseFileLoader';
+import * as Yaml      from 'js-yaml';
+import * as extend    from 'extend';
+import * as lodash    from 'lodash';
 
 
-class YamlLoader implements IConfigLoader {
+class YamlFileLoader implements IConfigLoader {
 
   private data:Object = {};
   private path:string;
@@ -18,7 +18,7 @@ class YamlLoader implements IConfigLoader {
 
     this.env = env || process.env.NODE_ENV || 'development'
 
-    var bl = new BaseLoader();
+    var bl = new BaseFileLoader();
     var data = bl.load(path).getData();
 
     try {
@@ -53,4 +53,4 @@ class YamlLoader implements IConfigLoader {
 
 }
 
-export default YamlLoader;
+export default YamlFileLoader;

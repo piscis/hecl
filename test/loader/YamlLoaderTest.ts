@@ -4,14 +4,14 @@ import {assert} from 'chai';
 import * as path from 'path';
 import * as lodash from 'lodash';
 import IConfigLoader from './../../src/interfaces/IConfigLoader';
-import YamlLoader from './../../src/loader/YamlLoader';
+import YamlFileLoader from './../../src/loader/YamlFileLoader';
 
-describe('YamlLoader', function(){
+describe('YamlFileLoader', function(){
 
-  var loader:YamlLoader;
+  var loader:YamlFileLoader;
 
   beforeEach(function(){
-    loader = new YamlLoader();
+    loader = new YamlFileLoader();
   });
 
   afterEach(function(){
