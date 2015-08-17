@@ -1,1 +1,1 @@
-var ConfigRegistry=require("./ConfigRegistry"),config=new ConfigRegistry;module.exports=config;
+var ConfigRegistry_1=require("./ConfigRegistry");module.exports=ConfigRegistry_1["default"];

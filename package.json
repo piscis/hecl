@@ -1,6 +1,6 @@
 {
   "name": "hecl",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "H.E.C.L. - Hierarchical Environment Config Loader",
   "main": "dist/main.js",
   "scripts": {

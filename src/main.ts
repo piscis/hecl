@@ -1,5 +1,3 @@
-import * as ConfigRegistry from './ConfigRegistry';
+import ConfigRegistry from './ConfigRegistry';
 
-var config = new ConfigRegistry();
-
-module.exports = config;
+module.exports = ConfigRegistry;
