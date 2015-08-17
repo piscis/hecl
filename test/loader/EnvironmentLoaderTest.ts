@@ -39,6 +39,8 @@ describe('EnvironmentLoader', function(){
 
   afterEach(function(){
     loader = null;
+    delete process.env.dummyData1;
+    delete process.env.dummyData2;
   });
 
   it('should load a JSON string from the enviroment variable', function(){
