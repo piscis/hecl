@@ -1,6 +1,6 @@
-# H.E.C.L.
+# HECL
 
-Hierarchical Environment Config Loader - for [node](http://nodejs.org).
+HECL - Hierarchical Environment Config Loader - for [node](http://nodejs.org).
 
   [![NPM Version][npm-image]][npm-url]
   [![NPM Downloads][downloads-image]][downloads-url]
